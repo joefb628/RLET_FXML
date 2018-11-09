@@ -1,0 +1,36 @@
+package rlet_fxml;
+
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+
+/**
+ *
+ * @author Joe Fleck
+ */
+public class RLET_FXML extends Application {
+    
+    @Override
+    public void start(Stage stage) throws Exception {
+
+        LoginCntl loginCntl = new LoginCntl();
+    
+        Parent root = FXMLLoader.load(getClass().getResource("LoginUI.fxml"));
+        
+        Scene scene = new Scene(root);        
+        stage.setScene(scene);
+        
+        stage.show();
+        stage.setTitle("Roommate Living Expense Tracker");
+    }
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        launch(args);
+    }
+    
+}

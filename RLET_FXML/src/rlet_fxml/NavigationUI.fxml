@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.181" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rlet_fxml.NavigationUICntl">
+   <children>
+      <Label fx:id="headerLabel" layoutX="141.0" layoutY="32.0" text="Welcome to the Roommate Living Expense Tracker!">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="instructionLabel" layoutX="201.0" layoutY="192.0" text="Please choose a function to continue:" />
+      <Button id="rideButton" fx:id="rideButton" layoutX="41.0" layoutY="244.0" mnemonicParsing="false" onAction="#ridesharingButtonAction" text="Manage Ridesharing" textAlignment="CENTER" />
+      <Button id="taskButton" fx:id="taskButton" layoutX="194.0" layoutY="244.0" mnemonicParsing="false" onAction="#taskButtonAction" text="Manage Tasks" textAlignment="CENTER" />
+      <Button id="expensesButton" fx:id="expenseButton" layoutX="314.0" layoutY="244.0" mnemonicParsing="false" onAction="#expenseButtonAction" text="Manage Expenses" textAlignment="CENTER" />
+      <Button id="remindersButton" fx:id="reminderButton" layoutX="450.0" layoutY="244.0" mnemonicParsing="false" onAction="#reminderButtonAction" text="View Reminders" textAlignment="CENTER" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="RLET_FXML.jnlp">
+  <information>
+    <title>RLET_FXML</title>
+    <vendor>Joe Fleck</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="RLET_FXML.jar" size="11229" download="eager" />
+    <jar href="lib\scenebuilder-10.0.0-all.jar" size="9899305" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="RLET_FXML" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="rlet_fxml.RLET_FXML"  name="RLET_FXML" />
+  <update check="always"/>
+</jnlp>
